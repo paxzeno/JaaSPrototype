@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<ui:composition template="/layout/layout.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="title"> Index </ui:define>
+    <ui:define name="content">
+        <h2>Content</h2>
+        <p:tabView id="detailsTab">
+            <ui:include src="/login.xhtml"/>
+            <ui:include src="/private/details.xhtml"/>
+        </p:tabView>
+
+    </ui:define>
+
+</ui:composition>
